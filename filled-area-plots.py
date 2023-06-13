@@ -2,7 +2,7 @@ from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 
 app = Dash(__name__)
-
+server=app.server
 app.layout = html.Div([
     html.H4("Country's key performance analytics"),
     html.P("Select data on y-axis:"),
